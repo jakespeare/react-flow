@@ -175,7 +175,7 @@ const ReactFlow = ({
   onEdgeUpdate,
   ...rest
 }: ReactFlowProps) => {
-  const nodeTypesParsed = useMemo(() => createNodeTypes(nodeTypes), []);
+  const nodeTypesParsed = useMemo(() => createNodeTypes(nodeTypes), [elements]);
   const edgeTypesParsed = useMemo(() => createEdgeTypes(edgeTypes), []);
   const reactFlowClasses = cc(['react-flow', className]);
 
